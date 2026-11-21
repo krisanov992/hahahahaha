@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FirstStep</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>FirstStep — підробіток після уроків</h1>
+      <p>Тут старшокласники можуть переглянути вакансії, порівняти умови та приховати ті, що не підходять.</p>
+
+      <div>
+        <button class="all-btn" onclick="showAll()">Показати всі вакансії</button>
+      </div>
+
+      <!-- Картка 1 -->
+      <article id="jobCard1" class="job-card">
+        <h2>Помічник фотографа</h2>
+        <div id="jobDetails1">
+          <p class="important">Оплата: 200 грн/год</p>
+          <p class="important">Графік: Гнучкий графік, після 15:00</p>
+          <p>Місце роботи: Харків</p>
+          <p>Обов’язки: Допомагати фотографу зі світлом та реквізитом у студії.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails1')">Згорнути деталі</button>
+        <button onclick="showDetails('jobDetails1')">Показати деталі</button>
+        <button onclick="hideCard('jobCard1')">Приховати вакансію</button>
+      </article>
+
+      <!-- Картка 2 -->
+      <article id="jobCard2" class="job-card">
+        <h2>Кур’єр</h2>
+        <div id="jobDetails2">
+          <p class="important">Оплата: 150 грн/год</p>
+          <p class="important">Графік: 3 години на день після школи</p>
+          <p>Місце роботи: Харків (центр)</p>
+          <p>Обов’язки: Доставка невеликих замовлень із кав’ярні пішки.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails2')">Згорнути деталі</button>
+        <button onclick="showDetails('jobDetails2')">Показати деталі</button>
+        <button onclick="hideCard('jobCard2')">Приховати вакансію</button>
+      </article>
+
+      <!-- Картка 3 -->
+      <article id="jobCard3" class="job-card">
+        <h2>Адміністратор соцмереж</h2>
+        <div id="jobDetails3">
+          <p class="important">Оплата: 180 грн/год</p>
+          <p class="important">Графік: Вільний (2-3 години ввечері)</p>
+          <p>Місце роботи: Дистанційно (з дому)</p>
+          <p>Обов’язки: Відповідати на повідомлення в інстаграмі магазину.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails3')">Згорнути деталі</button>
+        <button onclick="showDetails('jobDetails3')">Показати деталі</button>
+        <button onclick="hideCard('jobCard3')">Приховати вакансію</button>
+      </article>
+
+      <!-- Картка 4 -->
+      <article id="jobCard4" class="job-card">
+        <h2>Вигул собак</h2>
+        <div id="jobDetails4">
+          <p class="important">Оплата: 140 грн/год</p>
+          <p class="important">Графік: Будні з 16:00 до 18:00</p>
+          <p>Місце роботи: Харків (Салтівка)</p>
+          <p>Обов’язки: Вигулювати невеликих собак у парку поруч із будинком власника.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails4')">Згорнути деталі</button>
+        <button onclick="showDetails('jobDetails4')">Показати деталі</button>
+        <button onclick="hideCard('jobCard4')">Приховати вакансію</button>
+      </article>
+
+      <!-- Картка 5 -->
+      <article id="jobCard5" class="job-card">
+        <h2>Промоутер</h2>
+        <div id="jobDetails5">
+          <p class="important">Оплата: 160 грн/год</p>
+          <p class="important">Графік: П’ятниця та субота, по 3 години</p>
+          <p>Місце роботи: Харків (біля метро)</p>
+          <p>Обов’язки: Роздавати рекламні листівки біля нового магазину канцтоварів.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails5')">Згорнути деталі</button>
+        <button onclick="showDetails('jobDetails5')">Показати деталі</button>
+        <button onclick="hideCard('jobCard5')">Приховати вакансію</button>
+      </article>
+
+      <!-- Картка 6 -->
+      <article id="jobCard6" class="job-card">
+        <h2>Помічник баристи</h2>
+        <div id="jobDetails6">
+          <p class="important">Оплата: 170 грн/год</p>
+          <p class="important">Графік: Вихідні дні з 10:00 до 16:00</p>
+          <p>Місце роботи: Харків (вул. Сумська)</p>
+          <p>Обов’язки: Видавати десерти, прибирати столики та допомагати на касі.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails6')">Згорнути деталі</button>
+        <button onclick="showDetails('jobDetails6')">Показати деталі</button>
+        <button onclick="hideCard('jobCard6')">Приховати вакансію</button>
+      </article>
+
+      <!-- Картка 7 -->
+      <article id="jobCard7" class="job-card">
+        <h2>Репетитор для молодших класів</h2>
+        <div id="jobDetails7">
+          <p class="important">Оплата: 220 грн/год</p>
+          <p class="important">Графік: 2 рази на тиждень після 16:00</p>
+          <p>Місце роботи: Дистанційно (Zoom)</p>
+          <p>Обов’язки: Допомагати учням 3–4 класів робити домашнє завдання з математики.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails7')">Згорнути деталі</button>
+        <button onclick="showDetails('jobDetails7')">Показати деталі</button>
+        <button onclick="hideCard('jobCard7')">Приховати вакансію</button>
+      </article>
+
+      <!-- Картка 8 -->
+      <article id="jobCard8" class="job-card">
+        <h2>Пакувальник замовлень</h2>
+        <div id="jobDetails8">
+          <p class="important">Оплата: 165 грн/год</p>
+          <p class="important">Графік: Гнучкий (по 3–4 години ввечері)</p>
+          <p>Місце роботи: Харків (Немишлянський район)</p>
+          <p>Обов’язки: Складати товари в коробки та наклеювати етикетки для відправки.</p>
+        </div>
+        <button onclick="hideDetails('jobDetails8')">Згорнути деталі</button>
+        <button onclick="
